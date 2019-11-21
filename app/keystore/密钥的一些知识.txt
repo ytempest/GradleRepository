@@ -1,0 +1,14 @@
+1、Android Studio 自带的 debug.keystore 位置在 $HOME/.android/debug.keystore，密码是：android
+
+
+2、查看 apk 签名信息
+（1）解压 apk ，拿到 META-INF 目录下的 CERT.RSA 文件
+（3）使用 keytool 工具，该工具在 jdk/bin 目录下
+（2）使用命令：keytool -printcert -file CERT.RSA
+ 得到的信息如【CERT.RSA.txt、deubg-CERT.RSA.txt】文件所示，【deubg-CERT.RSA.txt】为 Android Studio 自带的签名打包出来的 debug 包
+
+
+
+3、查看 keystore 的信息
+ （1）使用命令：keytool -list -v -keystore gradleRepository.jks，会要求输入密钥密码
+得到的信息如【gradleRepository.jks.txt】文件所示

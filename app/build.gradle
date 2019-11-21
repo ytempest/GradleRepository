@@ -1,18 +1,64 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 26
+    compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
         applicationId "com.ytempest.gradlerepository"
-        minSdkVersion 14
-        targetSdkVersion 26
-        versionCode 1
-        versionName "1.0"
+        minSdkVersion rootProject.minSdkVersion
+        targetSdkVersion rootProject.targetSdkVersion
+        versionCode rootProject.versionCode
+        versionName rootProject.versionName
+        // 用于配置单元测试时使用的Runner
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
-    buildTypes {
+
+    /*配置签名信息*/
+    // 配置了签名信息后，还不能直接生成签名的apk，需要在buildTypes的类型中使用想要的签名信息
+    signingConfigs {
+        debug {
+            // 文件位置以根目录为起点
+            storeFile file("./keyStore/gradleRepository.jks")
+            storePassword "gradle123"
+            keyAlias "gradle"
+            keyPassword "gradle123"
+        }
+
         release {
+            // 文件位置以根目录为起点
+            storeFile file("./keystore/gradleRepository.jks")
+            storePassword "gradle123"
+            keyAlias "gradle"
+            keyPassword "gradle123"
+        }
+    }
+
+    /*构建类型*/
+    // 即定义 gradlew assembleXXX 中 XXX 的构建，如下面的 common，可以打包 gradlew assembleCommon
+    // 为了直观，所以大多使用 debug 和 release 两个命名
+    buildTypes {
+
+        common {
+            // 是否生成一个可供调试的 apk，默认为false
+            debuggable true
+            // 是否生成一个可供调试Jni(C/C++)的 apk，默认为false
+            jniDebuggable true
+        }
+
+        debug {
             minifyEnabled false
+            debuggable true
+            signingConfig signingConfigs.debug
+        }
+
+        release {
+            // 配置是否启动混淆
+            minifyEnabled true
+            // 配置是否自动清理未使用的资源，默认为false，AS 3.0.1之后开启该配置，必须先启动混淆，否则会编译报错
+            // 其实该配置依然会将资源打包到apk，只是会将图片替换成一个像素的正方形
+            shrinkResources true
+            // 配置了签名信息后，还不能直接生成签名的apk，需要在这里指定使用的签名类型
+            signingConfig signingConfigs.release
+            // 配置多个混淆文件
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }

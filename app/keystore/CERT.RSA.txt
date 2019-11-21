@@ -1,0 +1,21 @@
+Owner: CN=ytempest
+Issuer: CN=ytempest
+Serial number: 61e3acae
+Valid from: Thu Nov 21 23:05:16 CST 2019 until: Mon Nov 14 23:05:16 CST 2044
+Certificate fingerprints:
+	 MD5:  1C:C6:1E:F2:9D:D8:3A:BD:9F:55:6B:08:36:01:45:A0
+	 SHA1: E3:6A:D5:77:93:0D:FC:4B:39:C8:F9:08:95:66:7D:3D:10:CE:1C:B8
+	 SHA256: 69:64:6A:7F:50:03:34:B6:16:8D:41:B5:1B:50:56:58:B0:D8:0A:2D:33:D8:EA:8D:92:B7:28:98:92:E0:3F:19
+	 Signature algorithm name: SHA256withRSA
+	 Version: 3
+
+Extensions: 
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: 50 2B E9 B5 0A A2 6B C1   1C 9E F7 A6 41 E5 75 0E  P+....k.....A.u.
+0010: CF AE 21 6B                                        ..!k
+]
+]
+

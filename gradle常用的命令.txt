@@ -1,0 +1,2 @@
+- gradlew --refresh-dependencies
+可以使用命令行选项--refresh-dependencies来刷新缓存中的依赖项。您也可以删除下面的缓存文件~/.gradle/caches。下一次构建Gradle将尝试再次下载它们。

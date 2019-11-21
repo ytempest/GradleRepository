@@ -1,0 +1,10 @@
+Owner: C=US, O=Android, CN=Android Debug
+Issuer: C=US, O=Android, CN=Android Debug
+Serial number: 1
+Valid from: Sun Aug 11 18:36:07 CST 2019 until: Tue Aug 03 18:36:07 CST 2049
+Certificate fingerprints:
+	 MD5:  B8:7B:E8:01:DC:67:E1:45:F2:2B:7A:BD:FA:B1:26:F7
+	 SHA1: 05:D7:45:9E:51:E8:FA:A9:40:F6:43:99:A3:72:9B:3A:21:D7:96:C9
+	 SHA256: B1:8F:2C:1C:A6:A4:0B:9F:81:77:B3:C8:89:B0:CE:9E:B0:56:29:39:66:3C:C5:17:5F:BA:F7:90:FC:7A:3B:FA
+	 Signature algorithm name: SHA1withRSA
+	 Version: 1

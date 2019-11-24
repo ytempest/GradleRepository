@@ -59,9 +59,19 @@ android {
             // 配置了签名信息后，还不能直接生成签名的apk，需要在这里指定使用的签名类型
             signingConfig signingConfigs.release
             // 配置多个混淆文件
+            // getDefaultProguardFile获取的的是 SDK目录/tools/proguard 目录下的文件，proguard-android.txt是Android SDK
+            // 自带的混淆配置文件，这个是没有优化，一个是proguard-android-optimize.txt，这个是优化过的，对比请看proguard_sample文件夹
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            // zipalign是Android提供的一个整理优化apk文件的工具，它能提高系统和应用的运行效率，更快
+            // 地读写apk中的资源，降低内存使用，该配置默认开启
+            zipAlignEnabled true
         }
     }
+}
+
+// 配置aar包存放位置，设置存放在libs
+repositories {
+    flatDir { dirs 'libs' }
 }
 
 dependencies {

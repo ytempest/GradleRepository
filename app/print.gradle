@@ -1,0 +1,46 @@
+/**
+ * @author heqidu
+ * @since 2019/11/23
+ * 用于打印一些属性、方法
+ */
+android {//该闭包的对象为AppExtension，该闭包内的所有闭包可以访问到这闭包的所有配置
+    // 这里是apk所以是applicationVariants，如果是library，那么就是libraryVariants
+    applicationVariants.all { variant ->//获取到ApplicationVariant
+        log("---------------applicationVariant start---------------")
+        log("variant.name=" + variant.name)
+        log("variant.flavorName=" + variant.flavorName)
+        log("variant.description=" + variant.description)
+        log("variant.dirName=" + variant.dirName)
+        log("variant.baseName=" + variant.baseName)
+        log("variant.buildType=" + variant.buildType)
+        log("variant.signingConfig=" + variant.signingConfig)
+        log("variant.productFlavors=" + variant.productFlavors)
+        variant.productFlavors.each { flavor ->//获取到ReadOnlyProductFlavor
+            log("flavor.toString() =" + flavor.toString())
+            log("variant.outputs=" + variant.outputs)
+            variant.outputs.each { output ->//获取到BaseVariantOutput，实现类为BaseVariantOutputImpl
+                log("start---------BaseVariantOutput")
+                log("output.name =" + output.name)
+                log("output.baseName =" + output.baseName)
+                log("output.dirName =" + output.dirName)
+                log("output.outputFile =" + output.outputFile)
+                log("output.outputFileName =" + output.outputFileName)//通过outputFileName可以修改文件名
+                log("output.outputs =" + output.outputs)
+                output.outputs.each { out ->//获取到OutputFile，实现类为ApkOutputFile或者BuildOutput
+                    log("out.toString() =" + out.toString())
+                }
+                if (output.outputFile != null) {//类型为File
+                    log("output.outputFile.path =" + output.outputFile.path)
+                    log("output.outputFile.name =" + output.outputFile.name)
+                }
+                log("end---------BaseVariantOutput")
+            }
+        }
+        log("---------------applicationVariant end---------------\n")
+    }
+}
+
+
+static def log(Object val) {
+    println("[GradleRepository]: " + val)
+}

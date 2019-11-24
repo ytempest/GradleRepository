@@ -1,9 +1,15 @@
 apply plugin: 'com.android.application'
+apply from: './print.gradle'
+// 将apk.gradle引入到当前gradle脚本中
+apply from: './apk.gradle'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
     defaultConfig {
+        // 指定生成的applicationId，生成的id可以在apk文件的AndroidManifest.xml可以看到
         applicationId "com.ytempest.gradlerepository"
+        // 指定生成的applicationId的后缀，这个会加到applicationId的后面
+        applicationIdSuffix ".base"
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode rootProject.versionCode
@@ -32,6 +38,14 @@ android {
         }
     }
 
+    flavorDimensions "version"
+    productFlavors {
+        xiaomi {
+            applicationId "com.ytempest.xiaomi.gradlerepository"
+            applicationIdSuffix ".miui"
+        }
+    }
+
     /*构建类型*/
     // 即定义 gradlew assembleXXX 中 XXX 的构建，如下面的 common，可以打包 gradlew assembleCommon
     // 为了直观，所以大多使用 debug 和 release 两个命名
@@ -45,6 +59,8 @@ android {
         }
 
         debug {
+            // 构建类型只能配置applicationIdSuffix，不能配置applicationId
+            applicationIdSuffix ".debugsuffix"
             minifyEnabled false
             debuggable true
             signingConfig signingConfigs.debug

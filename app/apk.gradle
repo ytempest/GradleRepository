@@ -1,0 +1,100 @@
+/**
+ * @author heqidu
+ * @since 2019/11/23
+ * 用于修改生成的apk名称，生成的格式为：包名_渠道名_版本名_版本号_生成时间.apk
+ */
+android {//该闭包的对象为AppExtension，该闭包内的所有闭包可以访问到这闭包的所有配置
+    // 这里是apk所以是applicationVariants，如果是library，那么就是libraryVariants
+    applicationVariants.all { variant ->
+        variant.outputs.each { output ->
+            if (output.outputFile != null && output.outputFile.name.endsWith(".apk")) {
+                def buildTypeName = variant.buildType.name
+                def flavorName = variant.flavorName
+                def appId = getApplicationId(defaultConfig, productFlavors, flavorName)
+                def buildTypeSuffix = getBuildTypeSuffix(buildTypes, buildTypeName)
+                def finalAppId = appId + buildTypeSuffix
+                def versionName = defaultConfig.getVersionName()
+                def versionCode = defaultConfig.getVersionCode()
+                def time = getTimeStamp()
+                def apkName = new StringBuilder(finalAppId).append("_")
+                        .append(flavorName).append("_")
+                        .append(versionName).append("_")
+                        .append("vc").append(versionCode).append("_")
+                        .append(buildTypeName).append("_")
+                        .append(time).append(".apk")
+                        .toString()
+                output.outputFileName = apkName
+            }
+        }
+    }
+}
+
+static def getApplicationId(def defaultConfig, def productFlavors, def flavorName) {
+    def defaultAppId = defaultConfig.applicationId + defaultConfig.applicationIdSuffix
+    def flavorAppId = getFlavorAppId(productFlavors, flavorName)
+    def flavorAppIdSuffix = getFlavorAppIdSuffix(productFlavors, flavorName)
+    if (flavorAppId != "") {
+        defaultAppId = flavorAppId
+    }
+    return defaultAppId + flavorAppIdSuffix
+}
+
+/**
+ * 根据构建类型，返回指定的构建类型的 applicationIdSuffix
+ * @param buildTypes 构建类型的闭包
+ * @param buildTypeName 构建类型名称
+ * @return 如果该构建类型有配置applicationIdSuffix，那么返回applicationIdSuffix，否则返回 ""
+ */
+static def getBuildTypeSuffix(def buildTypes, def buildTypeName) {
+    def suffix = ""
+    buildTypes.each { buildType ->
+        if (buildTypeName == buildType.name.toString().trim()
+                && buildType.applicationIdSuffix != null && buildType.applicationIdSuffix != "") {
+            suffix = buildType.applicationIdSuffix
+        }
+    }
+    return suffix
+}
+
+/**
+ * 根据渠道名获取该渠道的applicationId
+ * @param productFlavors 配置渠道的闭包对象
+ * @param flavorName 渠道名
+ * @return 如果该渠道有配置applicationId，那么返回applicationId，否则返回 ""
+ */
+static def getFlavorAppId(def productFlavors, def flavorName) {
+    def appId = ""
+    productFlavors.each { flavor ->
+        if (flavorName == flavor.name.toString().trim()
+                && flavor.applicationId != null && flavor.applicationId != "") {
+            appId = flavor.applicationId
+        }
+    }
+    return appId
+}
+
+/**
+ * 根据渠道名获取该渠道的applicationIdSuffix
+ * @param productFlavors 配置渠道的闭包对象
+ * @param flavorName 渠道名
+ * @return 如果该渠道有配置applicationIdSuffix，那么返回applicationIdSuffix，否则返回 ""
+ */
+static def getFlavorAppIdSuffix(def productFlavors, def flavorName) {
+    def appIdSuffix = ""
+    productFlavors.each { flavor ->
+        if (flavorName == flavor.name.toString().trim()
+                && flavor.applicationIdSuffix != null && flavor.applicationIdSuffix != "") {
+            appIdSuffix = flavor.applicationIdSuffix
+        }
+    }
+    return appIdSuffix
+}
+
+static def getTimeStamp() {
+    def date = new Date()
+    return date.format("yyyyMMddHHmm")
+}
+
+static def log(Object val) {
+    println("[apk.gradle]: " + val)
+}

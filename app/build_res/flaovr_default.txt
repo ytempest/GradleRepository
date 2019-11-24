@@ -1,0 +1,72 @@
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=debug
+[GradleRepository]: variant.flavorName=
+[GradleRepository]: variant.description=Debug build
+[GradleRepository]: variant.dirName=debug
+[GradleRepository]: variant.baseName=debug
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@26b6379a
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@77994b62
+[GradleRepository]: variant.productFlavors=[]
+[GradleRepository]: ---------------applicationVariant end---------------
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=common
+[GradleRepository]: variant.flavorName=
+[GradleRepository]: variant.description=Common build
+[GradleRepository]: variant.dirName=common
+[GradleRepository]: variant.baseName=common
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@548fc926
+[GradleRepository]: variant.signingConfig=null
+[GradleRepository]: variant.productFlavors=[]
+[GradleRepository]: ---------------applicationVariant end---------------
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=release
+[GradleRepository]: variant.flavorName=
+[GradleRepository]: variant.description=Release build
+[GradleRepository]: variant.dirName=release
+[GradleRepository]: variant.baseName=release
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@9c7c1ff
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@462b7ac1
+[GradleRepository]: variant.productFlavors=[]
+[GradleRepository]: ---------------applicationVariant end---------------
+
+:app:checkDebugClasspath UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preDebugBuild UP-TO-DATE
+:app:compileDebugAidl NO-SOURCE
+:app:compileDebugRenderscript UP-TO-DATE
+:app:checkDebugManifest
+:app:generateDebugBuildConfig
+:app:prepareLintJar UP-TO-DATE
+:app:mainApkListPersistenceDebug
+:app:generateDebugResValues UP-TO-DATE
+:app:generateDebugResources UP-TO-DATE
+:app:mergeDebugResources
+:app:createDebugCompatibleScreenManifests
+:app:processDebugManifest
+:app:splitsDiscoveryTaskDebug
+:app:processDebugResources
+:app:generateDebugSources
+:app:javaPreCompileDebug
+:app:compileDebugJavaWithJavac
+:app:compileDebugNdk NO-SOURCE
+:app:compileDebugSources
+:app:mergeDebugShaders
+:app:compileDebugShaders
+:app:generateDebugAssets
+:app:mergeDebugAssets
+:app:transformClassesWithDexBuilderForDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForDebug
+:app:transformDexArchiveWithDexMergerForDebug
+:app:mergeDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForDebug
+:app:checkDebugLibraries
+:app:processDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForDebug
+:app:validateSigningDebug
+:app:packageDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL in 3s
+27 actionable tasks: 22 executed, 5 up-to-date

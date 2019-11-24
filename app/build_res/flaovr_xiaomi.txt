@@ -1,0 +1,112 @@
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=xiaomiDebug
+[GradleRepository]: variant.flavorName=xiaomi
+[GradleRepository]: variant.description=DebugXiaomi build
+[GradleRepository]: variant.dirName=xiaomi/debug
+[GradleRepository]: variant.baseName=xiaomi-debug
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@3baa9376
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@133c07f8
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@3235806d]
+[GradleRepository]: flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@3235806d
+[GradleRepository]: variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: start---------BaseVariantOutput
+[GradleRepository]: output.name =xiaomi-debug
+[GradleRepository]: output.baseName =xiaomi-debug
+[GradleRepository]: output.dirName =
+[GradleRepository]: output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/xiaomi/debug/app-xiaomi-debug.apk
+[GradleRepository]: output.outputFileName =app-xiaomi-debug.apk
+[GradleRepository]: output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiDebug, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/xiaomi/debug/app-xiaomi-debug.apk
+[GradleRepository]: output.outputFile.name =app-xiaomi-debug.apk
+[GradleRepository]: end---------BaseVariantOutput
+[GradleRepository]: ---------------applicationVariant end---------------
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=xiaomiCommon
+[GradleRepository]: variant.flavorName=xiaomi
+[GradleRepository]: variant.description=CommonXiaomi build
+[GradleRepository]: variant.dirName=xiaomi/common
+[GradleRepository]: variant.baseName=xiaomi-common
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@7b61bd8f
+[GradleRepository]: variant.signingConfig=null
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@3235806d]
+[GradleRepository]: flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@3235806d
+[GradleRepository]: variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: start---------BaseVariantOutput
+[GradleRepository]: output.name =xiaomi-common
+[GradleRepository]: output.baseName =xiaomi-common
+[GradleRepository]: output.dirName =
+[GradleRepository]: output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/xiaomi/common/app-xiaomi-common-unsigned.apk
+[GradleRepository]: output.outputFileName =app-xiaomi-common-unsigned.apk
+[GradleRepository]: output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiCommon, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/xiaomi/common/app-xiaomi-common-unsigned.apk
+[GradleRepository]: output.outputFile.name =app-xiaomi-common-unsigned.apk
+[GradleRepository]: end---------BaseVariantOutput
+[GradleRepository]: ---------------applicationVariant end---------------
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=xiaomiRelease
+[GradleRepository]: variant.flavorName=xiaomi
+[GradleRepository]: variant.description=ReleaseXiaomi build
+[GradleRepository]: variant.dirName=xiaomi/release
+[GradleRepository]: variant.baseName=xiaomi-release
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@194687f0
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@fcf1a39
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@3235806d]
+[GradleRepository]: flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@3235806d
+[GradleRepository]: variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: start---------BaseVariantOutput
+[GradleRepository]: output.name =xiaomi-release
+[GradleRepository]: output.baseName =xiaomi-release
+[GradleRepository]: output.dirName =
+[GradleRepository]: output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/xiaomi/release/app-xiaomi-release.apk
+[GradleRepository]: output.outputFileName =app-xiaomi-release.apk
+[GradleRepository]: output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=xiaomiRelease, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/xiaomi/release/app-xiaomi-release.apk
+[GradleRepository]: output.outputFile.name =app-xiaomi-release.apk
+[GradleRepository]: end---------BaseVariantOutput
+[GradleRepository]: ---------------applicationVariant end---------------
+
+:app:checkXiaomiDebugClasspath
+:app:preBuild UP-TO-DATE
+:app:preXiaomiDebugBuild
+:app:compileXiaomiDebugAidl NO-SOURCE
+:app:compileXiaomiDebugRenderscript
+:app:checkXiaomiDebugManifest
+:app:generateXiaomiDebugBuildConfig
+:app:prepareLintJar UP-TO-DATE
+:app:mainApkListPersistenceXiaomiDebug
+:app:generateXiaomiDebugResValues
+:app:generateXiaomiDebugResources
+:app:mergeXiaomiDebugResources
+:app:createXiaomiDebugCompatibleScreenManifests
+:app:processXiaomiDebugManifest
+:app:splitsDiscoveryTaskXiaomiDebug
+:app:processXiaomiDebugResources
+:app:generateXiaomiDebugSources
+:app:javaPreCompileXiaomiDebug
+:app:compileXiaomiDebugJavaWithJavac
+:app:compileXiaomiDebugNdk NO-SOURCE
+:app:compileXiaomiDebugSources
+:app:mergeXiaomiDebugShaders
+:app:compileXiaomiDebugShaders
+:app:generateXiaomiDebugAssets
+:app:mergeXiaomiDebugAssets
+:app:transformClassesWithDexBuilderForXiaomiDebug
+:app:transformDexArchiveWithExternalLibsDexMergerForXiaomiDebug
+:app:transformDexArchiveWithDexMergerForXiaomiDebug
+:app:mergeXiaomiDebugJniLibFolders
+:app:transformNativeLibsWithMergeJniLibsForXiaomiDebug
+:app:checkXiaomiDebugLibraries
+:app:processXiaomiDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForXiaomiDebug
+:app:validateSigningXiaomiDebug
+:app:packageXiaomiDebug
+:app:assembleXiaomiDebug
+:app:assembleDebug
+
+BUILD SUCCESSFUL in 6s
+27 actionable tasks: 26 executed, 1 up-to-date

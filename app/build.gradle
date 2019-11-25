@@ -22,7 +22,6 @@ android {
     // 配置了签名信息后，还不能直接生成签名的apk，需要在buildTypes的类型中使用想要的签名信息
     signingConfigs {
         debug {
-            // 文件位置以根目录为起点
             storeFile file("./keyStore/gradleRepository.jks")
             storePassword "gradle123"
             keyAlias "gradle"
@@ -32,17 +31,33 @@ android {
         release {
             // 文件位置以根目录为起点
             storeFile file("./keystore/gradleRepository.jks")
+            // 密钥库密码
             storePassword "gradle123"
+            // 密钥别名
             keyAlias "gradle"
+            // 密钥密码
             keyPassword "gradle123"
         }
     }
 
-    flavorDimensions "version"
+    // 设置风味的维度，维度有大小区分，第一个维度最大，依次减小，最终的风味的维度=第1维度+第2维度+...+第n维度
+    // 生成的BuildConfig类中的FLAVOR的值为："dimension1"+"dimension2"+"dimension3"+....
+    flavorDimensions "store", "phone"
     productFlavors {
+        baidu {
+            dimension "store"
+            applicationIdSuffix ".baidu"
+        }
+
         xiaomi {
+            dimension "phone"
             applicationId "com.ytempest.xiaomi.gradlerepository"
             applicationIdSuffix ".miui"
+        }
+
+        huawei {
+            dimension "phone"
+            applicationIdSuffix ".emui"
         }
     }
 

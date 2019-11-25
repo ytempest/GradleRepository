@@ -15,26 +15,35 @@ android {//该闭包的对象为AppExtension，该闭包内的所有闭包可以
         log("variant.buildType=" + variant.buildType)
         log("variant.signingConfig=" + variant.signingConfig)
         log("variant.productFlavors=" + variant.productFlavors)
-        variant.productFlavors.each { flavor ->//获取到ReadOnlyProductFlavor
-            log("flavor.toString() =" + flavor.toString())
-            log("variant.outputs=" + variant.outputs)
+
+        variant.productFlavors.each { flavor ->//获取到ReadOnlyProductFlavor，实现类为ProductFlavorImpl
+            log("\tstart---------ReadOnlyProductFlavor")
+            log("\tflavor.toString() =" + flavor.toString())
+            log("\tflavor.applicationId =" + flavor.applicationId)
+            log("\tflavor.applicationIdSuffix =" + flavor.applicationIdSuffix)
+            log("\tflavor.dimension =" + flavor.dimension)
+            log("\tvariant.outputs=" + variant.outputs)
+
             variant.outputs.each { output ->//获取到BaseVariantOutput，实现类为BaseVariantOutputImpl
-                log("start---------BaseVariantOutput")
-                log("output.name =" + output.name)
-                log("output.baseName =" + output.baseName)
-                log("output.dirName =" + output.dirName)
-                log("output.outputFile =" + output.outputFile)
-                log("output.outputFileName =" + output.outputFileName)//通过outputFileName可以修改文件名
-                log("output.outputs =" + output.outputs)
+                log("\t\tstart---------BaseVariantOutput")
+                log("\t\toutput.name =" + output.name)
+                log("\t\toutput.baseName =" + output.baseName)
+                log("\t\toutput.dirName =" + output.dirName)
+                log("\t\toutput.outputFile =" + output.outputFile)
+                log("\t\toutput.outputFileName =" + output.outputFileName)//通过outputFileName可以修改文件名
+                log("\t\toutput.outputs =" + output.outputs)
+
                 output.outputs.each { out ->//获取到OutputFile，实现类为ApkOutputFile或者BuildOutput
-                    log("out.toString() =" + out.toString())
+                    log("\t\tout.toString() =" + out.toString())
                 }
+
                 if (output.outputFile != null) {//类型为File
-                    log("output.outputFile.path =" + output.outputFile.path)
-                    log("output.outputFile.name =" + output.outputFile.name)
+                    log("\t\toutput.outputFile.path =" + output.outputFile.path)
+                    log("\t\toutput.outputFile.name =" + output.outputFile.name)
                 }
-                log("end---------BaseVariantOutput")
+                log("\t\tend---------BaseVariantOutput")
             }
+            log("\tend---------ReadOnlyProductFlavor")
         }
         log("---------------applicationVariant end---------------\n")
     }

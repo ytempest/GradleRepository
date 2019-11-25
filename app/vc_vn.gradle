@@ -1,0 +1,50 @@
+/**
+ * 使用git获取版本名和版本号的脚本
+ */
+android {
+    def versionName = getVersionNameFromGit()
+    log("versionName from git : 【" + versionName + "】")
+    def versionCode = getVersionCodeFromGit()
+    log("versionCode from git : 【" + versionCode + "】")
+}
+
+/**
+ * 使用git获取当前的版本名
+ * Note：
+ * git打tag的命令为：git tag -a v1.0 -m "version 1.0"
+ * git删除tag的命令为：git tag -d v1.0
+ *
+ * 使用git获取当前tag的命令为：git describe --abbrev=0 --tags
+ */
+def getVersionNameFromGit() {
+    // try-catch是为了预防没有打tag的情况
+    try {
+        def stdout = new ByteArrayOutputStream()
+        exec {
+            commandLine 'git', 'describe', '--abbrev=0', '--tags'
+            // 这里相当于将我们的输出流管子接到命令行的输出流管子上，这样就可以获取到命令行的输出了
+            standardOutput = stdout
+        }
+        // 使用exec执行shell时需要注意其返回的字符串末尾可能带有换行符，在使用前最好先trim()
+        // 可以尝试将 trim() 去掉看一下输出
+        return stdout.toString().trim()
+    } catch (Throwable ignored) {
+        throw IllegalArgumentException("当前项目并没有打tag，无法获取到当前tag的版本名")
+    }
+}
+
+/**
+ * 使用git获取当前的版本号
+ */
+def getVersionCodeFromGit() {
+    def stdout = new ByteArrayOutputStream()
+    exec {
+        commandLine 'git', 'tag', '--list'
+        standardOutput = stdout
+    }
+    return stdout.toString().split("\n").size()
+}
+
+static def log(Object val) {
+    println("[vc_vn.gradle]: " + val)
+}

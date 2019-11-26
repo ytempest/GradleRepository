@@ -43,7 +43,14 @@ def getVersionCodeFromGit() {
         commandLine 'git', 'tag', '--list'
         standardOutput = stdout
     }
-    return stdout.toString().split("\n").size()
+    def list = stdout.toString().trim()
+    // 如果没有tag时应该抛出异常
+    if (list == "") {
+        // FIXME 这里最好抛出异常，为了在没有tag时能正常运行，暂时注释
+//        throw IllegalArgumentException("当前项目并没有打tag，无法获取到当前tag的版本名")
+    } else {
+        return list.split("\n").size()
+    }
 }
 
 static def log(Object val) {

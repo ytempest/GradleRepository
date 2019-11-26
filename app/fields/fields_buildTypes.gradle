@@ -1,25 +1,37 @@
 // 这里的代码会先于 android{} 执行
 final def INT = "int"
+final def INTEGER = "Integer"
 final def STRING = "String"
 
 
 android {
+    // 这个buildTypes下的打包类型会和 build.gradle 下的合并
     buildTypes {
         debug {
             def debugConfigs = getConfigs("./fields/person_debug.properties")
             log("debugConfigs = " + debugConfigs.toString())
+            // buildConfigField用于配置自动生成的属性，这个属性位于 BuildConfig.java 中
             buildConfigField STRING, "developer", "\"${debugConfigs['developer']}\""
             buildConfigField STRING, "gender", "\"${debugConfigs['gender']}\""
-            buildConfigField INT, "age", "${debugConfigs['age']}"
+            // 如果是int、long、等一些基本类型，如果我们配置文件没有配置这个值，那么
+            // debugConfigs['age']就为null，就可能出现【public static final int age = null;】
+            // 比较好的做法是用对应的包装类型，最好的做法是用String，然后自己在代码做一些处理
+            buildConfigField INTEGER, "age", "${debugConfigs['age']}"
         }
 
         release {
             def releaseConfigs = getConfigs("./fields/person_release.properties")
             log("releaseConfigs = " + releaseConfigs.toString())
+
             buildConfigField STRING, "developer", "\"${releaseConfigs['developer']}\""
             buildConfigField STRING, "gender", "\"${releaseConfigs['gender']}\""
             buildConfigField INT, "age", "${releaseConfigs['age']}"
         }
+
+        // 这里还可以定义新的 buildType
+//        fullRelease {
+//
+//        }
     }
 }
 

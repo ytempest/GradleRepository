@@ -1,11 +1,12 @@
 apply plugin: 'com.android.application'
 // 一个打印配置的脚本
-//apply from: './print.gradle'
+apply from: './print.gradle'
 // 将apk.gradle引入到当前gradle脚本中
 apply from: './apk.gradle'
 // 学习使用git获取版本名和版本号的脚本
 apply from: './vc_vn.gradle'
-apply from: './fields/fields_debug.gradle'
+// 只对buildTypes配置指定buildConfigField的脚本
+apply from: './fields/fields_buildTypes.gradle'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion

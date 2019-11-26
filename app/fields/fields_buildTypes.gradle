@@ -1,0 +1,35 @@
+// 这里的代码会先于 android{} 执行
+final def INT = "int"
+final def STRING = "String"
+
+
+android {
+    buildTypes {
+        debug {
+            def debugConfigs = getConfigs("./fields/person_debug.properties")
+            log("debugConfigs = " + debugConfigs.toString())
+            buildConfigField STRING, "developer", "\"${debugConfigs['developer']}\""
+            buildConfigField STRING, "gender", "\"${debugConfigs['gender']}\""
+            buildConfigField INT, "age", "${debugConfigs['age']}"
+        }
+
+        release {
+            def releaseConfigs = getConfigs("./fields/person_release.properties")
+            log("releaseConfigs = " + releaseConfigs.toString())
+            buildConfigField STRING, "developer", "\"${releaseConfigs['developer']}\""
+            buildConfigField STRING, "gender", "\"${releaseConfigs['gender']}\""
+            buildConfigField INT, "age", "${releaseConfigs['age']}"
+        }
+    }
+}
+
+def getConfigs(String path) {
+    def file = project.file(path)
+    def configs = new Properties()
+    configs.load(new FileInputStream(file))
+    return configs
+}
+
+static def log(Object val) {
+    println("fields_buildTypes.gradle" + val)
+}

@@ -29,7 +29,8 @@ def getVersionNameFromGit() {
         // 可以尝试将 trim() 去掉看一下输出
         return stdout.toString().trim()
     } catch (Throwable ignored) {
-        throw IllegalArgumentException("当前项目并没有打tag，无法获取到当前tag的版本名")
+        // FIXME 这里最好抛出异常，为了在不打tag时能正常运行，暂时注释
+//        throw IllegalArgumentException("当前项目并没有打tag，无法获取到当前tag的版本名")
     }
 }
 

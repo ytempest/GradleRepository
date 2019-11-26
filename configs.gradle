@@ -1,0 +1,20 @@
+log("project=" + project)
+log("rootProject=" + rootProject)
+
+def file = project.file("./properties/configs.properties")
+def localConfigs
+if (!file.exists()) {
+    localConfigs = new Properties()
+    property.load(new FileInputStream(file))
+
+} else {
+    localConfigs = new Properties()
+    localConfigs['userNamme'] = ""
+    localConfigs['userGender'] = ""
+    localConfigs['userAge'] = ""
+}
+log("localConfigs.toString()=" + localConfigs.toString())
+
+static def log(Object val) {
+    println("[configs.gradle]: " + val)
+}

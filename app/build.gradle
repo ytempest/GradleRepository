@@ -1,10 +1,11 @@
 apply plugin: 'com.android.application'
 // 一个打印配置的脚本
-apply from: './print.gradle'
+//apply from: './print.gradle'
 // 将apk.gradle引入到当前gradle脚本中
 apply from: './apk.gradle'
 // 学习使用git获取版本名和版本号的脚本
 apply from: './vc_vn.gradle'
+apply from: './fields/fields_debug.gradle'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -13,6 +14,8 @@ android {
         applicationId "com.ytempest.gradlerepository"
         // 指定生成的applicationId的后缀，这个会加到applicationId的后面
         applicationIdSuffix ".base"
+        // rootProject：表示获取的是build.gradle所在项目的根项目，这里获取到的是：GradleRepository
+        // project：表示获取的是build.gradle所在的项目，这里获取到的是：app
         minSdkVersion rootProject.minSdkVersion
         targetSdkVersion rootProject.targetSdkVersion
         versionCode rootProject.versionCode

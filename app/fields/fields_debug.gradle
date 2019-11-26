@@ -1,0 +1,11 @@
+def INT = "int"
+def STRING = "String"
+def INTEGER = "Integer"
+
+android {
+    buildTypes {
+        debug {
+            buildConfigField STRING, "name", "ytempest"
+        }
+    }
+}

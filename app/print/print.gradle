@@ -65,29 +65,30 @@ android {//该闭包的对象为AppExtension，该闭包内的所有闭包可以
             log("\tflavor.resourceConfigurations =" + flavor.resourceConfigurations)
             log("\tflavor.signingConfig =" + flavor.signingConfig)
             log("\tflavor.buildConfigFields =" + flavor.buildConfigFields)
-
-            log("\tvariant.outputs=" + variant.outputs)
-            variant.outputs.each { output ->//获取到BaseVariantOutput，实现类为BaseVariantOutputImpl
-                log("\t\tstart---------BaseVariantOutput")
-                log("\t\toutput.name =" + output.name)
-                log("\t\toutput.baseName =" + output.baseName)
-                log("\t\toutput.dirName =" + output.dirName)
-                log("\t\toutput.outputFile =" + output.outputFile)
-                log("\t\toutput.outputFileName =" + output.outputFileName)//通过outputFileName可以修改文件名
-                log("\t\toutput.outputs =" + output.outputs)
-
-                output.outputs.each { out ->//获取到OutputFile，实现类为ApkOutputFile或者BuildOutput
-                    log("\t\tout.toString() =" + out.toString())
-                }
-
-                if (output.outputFile != null) {//类型为File
-                    log("\t\toutput.outputFile.path =" + output.outputFile.path)
-                    log("\t\toutput.outputFile.name =" + output.outputFile.name)
-                }
-                log("\t\tend---------BaseVariantOutput")
-            }
             log("\tend---------ReadOnlyProductFlavor")
         }
+
+        log("variant.outputs=" + variant.outputs)
+        variant.outputs.each { output ->//获取到BaseVariantOutput，实现类为BaseVariantOutputImpl
+            log("\tstart---------BaseVariantOutput")
+            log("\toutput.name =" + output.name)
+            log("\toutput.baseName =" + output.baseName)
+            log("\toutput.dirName =" + output.dirName)
+            log("\toutput.outputFile =" + output.outputFile)
+            log("\toutput.outputFileName =" + output.outputFileName)//通过outputFileName可以修改文件名
+            log("\toutput.outputs =" + output.outputs)
+
+            output.outputs.each { out ->//获取到OutputFile，实现类为ApkOutputFile或者BuildOutput
+                log("\tout.toString() =" + out.toString())
+            }
+
+            if (output.outputFile != null) {//类型为File
+                log("\toutput.outputFile.path =" + output.outputFile.path)
+                log("\toutput.outputFile.name =" + output.outputFile.name)
+            }
+            log("\tend---------BaseVariantOutput")
+        }
+
         log("---------------applicationVariant end---------------")
         log("\n")
     }

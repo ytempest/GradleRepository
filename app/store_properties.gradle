@@ -1,0 +1,79 @@
+android {
+    applicationVariants.all { variant ->
+
+        variant.productFlavors.each { flavor ->
+
+            assemble.doLast {
+                log("")
+                log("flavor.name =" + flavor.name)
+                def minSdkVersion = flavor.minSdkVersion
+                log("flavor.minSdkVersion =" + minSdkVersion)
+                log("flavor.minSdkVersion.apiLevel =" + (minSdkVersion != null ? minSdkVersion.apiLevel : null))
+                def targetSdkVersion = flavor.targetSdkVersion
+                log("flavor.targetSdkVersion.apiLevel =" + (targetSdkVersion != null ? targetSdkVersion.apiLevel : null))
+
+                log("defaultConfig.toString()=" + defaultConfig.toString())
+                log("defaultConfig.minSdkVersion.apiLevel=" + defaultConfig.minSdkVersion.apiLevel)
+                log("defaultConfig.targetSdkVersion.apiLevel=" + defaultConfig.targetSdkVersion.apiLevel)
+                log("")
+            }
+
+        }
+
+        variant.outputs.all { output ->
+            // 每执行一次assemble任务时首先会调用这里，比如 assembleDebug 时，在执行 assembleXiaomiDebug
+            // 和 assembleHuaweiDebug 任务前会调用这个方法
+            assemble.doFirst {
+                log("start run the task：" + variant.name)
+            }
+
+            // 这里的代码会先于 assemble.doFirst 和 assemble.doLast 执行
+            log("run immediately !!!")
+
+            assemble.doLast {
+                log("end run the task：" + variant.name)
+                def outProperties = new Properties()
+                // applicationId
+                outProperties.setProperty("APPLICATION_ID", variant.applicationId)
+                // 版本号
+                outProperties.setProperty("VERSION_CODE", variant.versionCode as String)
+                // 版本名称
+                outProperties.setProperty("VERSION_NAME", variant.versionName)
+                // 渠道名
+                outProperties.setProperty("FLAVOR_NAME", variant.flavorName)
+                // 构建类型
+                outProperties.setProperty("BUILD_TYPE", variant.buildType.name)
+                // 构建时间
+                outProperties.setProperty("BUILD_DATE", getFormatDate() as String)
+                // apk文件名
+                outProperties.setProperty("APK_NAME", output.outputFileName)
+                // apk文件大小
+                outProperties.setProperty("APK_SIZE", formatFileSize(output.outputFile.size()))
+
+                def outPropertiesName = "output.properties"
+                def outPropertiesFile = new File(output.outputFile.parent, outPropertiesName)
+                log(outPropertiesName + " file path : " + outPropertiesFile.absolutePath)
+                outProperties.store(new FileOutputStream(outPropertiesFile), null)
+            }
+        }
+    }
+}
+
+static def formatFileSize(long size) {
+    float kb = 1024F
+    float mb = 1024F * kb
+    if (size / mb < 1) {
+        return String.format("%.2fKB", size / kb)
+    } else {
+        return String.format("%.2fMB", size / mb)
+    }
+}
+
+static def getFormatDate() {
+    def date = new Date()
+    return date.format("yyyy-MM-dd HH:mm:ss")
+}
+
+static def log(Object val) {
+    println("[store_properties.gradle]: " + val)
+}

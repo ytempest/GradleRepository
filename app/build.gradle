@@ -1,12 +1,13 @@
 apply plugin: 'com.android.application'
 // 一个打印配置的脚本
-apply from: './print/print.gradle'
+//apply from: './print/print.gradle'
 // 将apk.gradle引入到当前gradle脚本中
 apply from: './apk.gradle'
 // 学习使用git获取版本名和版本号的脚本
 apply from: './vc_vn.gradle'
 // 只对buildTypes配置指定buildConfigField的脚本
 apply from: './fields/fields_buildTypes.gradle'
+apply from: './store_properties.gradle'
 
 android {
     compileSdkVersion rootProject.compileSdkVersion
@@ -53,16 +54,22 @@ android {
     productFlavors {
         baidu {
             dimension "store"
+            minSdkVersion 16
             applicationIdSuffix ".baidu"
         }
 
         xiaomi {
+            // minSdkVersion和targetSdkVersion会优先使用productFlavors中配置的，没有配置则使用defaultConfig中的
+            minSdkVersion 17
+            targetSdkVersion 27
             dimension "phone"
             applicationId "com.ytempest.xiaomi.gradlerepository"
             applicationIdSuffix ".miui"
         }
 
         huawei {
+            minSdkVersion 18
+            targetSdkVersion 28
             dimension "phone"
             applicationIdSuffix ".emui"
         }

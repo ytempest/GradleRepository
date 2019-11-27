@@ -1,0 +1,99 @@
+/**
+ * @author heqidu
+ * @since 2019/11/23
+ * 用于打印一些属性、方法
+ */
+android {//该闭包的对象为AppExtension，该闭包内的所有闭包可以访问到这闭包的所有配置
+    // 这里是apk所以是applicationVariants，如果是library，那么就是libraryVariants
+    applicationVariants.all { variant ->//获取到ApplicationVariant
+        log("\n")
+        log("---------------applicationVariant start---------------")
+        log("variant.name=" + variant.name)
+        log("variant.applicationId=" + variant.applicationId)
+        log("variant.flavorName=" + variant.flavorName)
+        log("variant.description=" + variant.description)
+        log("variant.dirName=" + variant.dirName)
+        log("variant.baseName=" + variant.baseName)
+
+        //获取到的对象为：ReadOnlyBuildType，BuildType的接口实现类为BuildTypeImpl
+        log("variant.buildType=" + variant.buildType.toString())
+        log("\tstart---------ReadOnlyBuildType")
+        log("\tvariant.buildType.name=" + variant.buildType.name)
+        log("\tvariant.buildType.versionNameSuffix=" + variant.buildType.versionNameSuffix)
+        log("\tvariant.buildType.debuggable=" + variant.buildType.debuggable)
+
+        //获取到的对象为：Map<String, ClassField>，ClassField的接口实现类为ClassFieldImpl
+        log("\tvariant.buildType.buildConfigFields=" + variant.buildType.buildConfigFields)
+        variant.buildType.buildConfigFields.each {
+            log("\t\tbuildConfigFields.key=" + it.key)
+            log("\t\tbuildConfigFields.value.type=" + it.value.type)
+            log("\t\tbuildConfigFields.value.name=" + it.value.name)
+            log("\t\tbuildConfigFields.value.value=" + it.value.value)
+            log("\t\t-------------divider-------------")
+        }
+        log("\tend---------ReadOnlyBuildType")
+
+        //获取到的对象为：ReadOnlySigningConfig，SigningConfig的接口实现类为SigningConfigImpl
+        log("variant.signingConfig=" + variant.signingConfig.toString())
+        if (variant.signingConfig != null) {
+            log("\tstart---------ReadOnlySigningConfig")
+            log("\tvariant.signingConfig.name=" + variant.signingConfig.name)
+            log("\tvariant.signingConfig.storeFile=" + variant.signingConfig.storeFile)
+            log("\tvariant.signingConfig.keyAlias=" + variant.signingConfig.keyAlias)
+            log("\tvariant.signingConfig.keyPassword=" + variant.signingConfig.keyPassword)
+            log("\tvariant.signingConfig.storeType=" + variant.signingConfig.storeType)
+            log("\tvariant.signingConfig.v1SigningEnabled=" + variant.signingConfig.v1SigningEnabled)
+            log("\tvariant.signingConfig.v2SigningEnabled=" + variant.signingConfig.v2SigningEnabled)
+            log("\tvariant.signingConfig.signingReady=" + variant.signingConfig.signingReady)
+            log("\tend---------ReadOnlySigningConfig")
+        }
+
+        log("variant.productFlavors=" + variant.productFlavors.toString())
+        variant.productFlavors.each { flavor ->//获取到ReadOnlyProductFlavor，实现类为ProductFlavorImpl
+            log("\tstart---------ReadOnlyProductFlavor")
+            log("\tflavor.toString() =" + flavor.toString())
+            log("\tflavor.name =" + flavor.name)
+            log("\tflavor.dimension =" + flavor.dimension)
+            log("\tflavor.applicationId =" + flavor.applicationId)
+            log("\tflavor.applicationIdSuffix =" + flavor.applicationIdSuffix)
+            log("\tflavor.versionCode =" + flavor.versionCode)
+            log("\tflavor.versionName =" + flavor.versionName)
+            log("\tflavor.versionNameSuffix =" + flavor.versionNameSuffix)
+            log("\tflavor.minSdkVersion =" + flavor.minSdkVersion)
+            log("\tflavor.targetSdkVersion =" + flavor.targetSdkVersion)
+            log("\tflavor.maxSdkVersion =" + flavor.maxSdkVersion)
+            log("\tflavor.resourceConfigurations =" + flavor.resourceConfigurations)
+            log("\tflavor.signingConfig =" + flavor.signingConfig)
+            log("\tflavor.buildConfigFields =" + flavor.buildConfigFields)
+
+            log("\tvariant.outputs=" + variant.outputs)
+            variant.outputs.each { output ->//获取到BaseVariantOutput，实现类为BaseVariantOutputImpl
+                log("\t\tstart---------BaseVariantOutput")
+                log("\t\toutput.name =" + output.name)
+                log("\t\toutput.baseName =" + output.baseName)
+                log("\t\toutput.dirName =" + output.dirName)
+                log("\t\toutput.outputFile =" + output.outputFile)
+                log("\t\toutput.outputFileName =" + output.outputFileName)//通过outputFileName可以修改文件名
+                log("\t\toutput.outputs =" + output.outputs)
+
+                output.outputs.each { out ->//获取到OutputFile，实现类为ApkOutputFile或者BuildOutput
+                    log("\t\tout.toString() =" + out.toString())
+                }
+
+                if (output.outputFile != null) {//类型为File
+                    log("\t\toutput.outputFile.path =" + output.outputFile.path)
+                    log("\t\toutput.outputFile.name =" + output.outputFile.name)
+                }
+                log("\t\tend---------BaseVariantOutput")
+            }
+            log("\tend---------ReadOnlyProductFlavor")
+        }
+        log("---------------applicationVariant end---------------")
+        log("\n")
+    }
+}
+
+
+static def log(Object val) {
+    println("[GradleRepository]: " + val)
+}

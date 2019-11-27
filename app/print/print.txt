@@ -1,0 +1,645 @@
+[vc_vn.gradle]: versionName from git : 【null】
+[vc_vn.gradle]: versionCode from git : 【null】
+fields_buildTypes.gradledebugConfigs = {developer=heqidu, gender=male}
+fields_buildTypes.gradlereleaseConfigs = {age=23, developer=ytempest, gender=male}
+[GradleRepository]: 
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=baiduXiaomiDebug
+[GradleRepository]: variant.applicationId=com.ytempest.xiaomi.gradlerepository.base.baidu.miui.debugsuffix
+[GradleRepository]: variant.flavorName=baiduXiaomi
+[GradleRepository]: variant.description=DebugBaiduXiaomi build
+[GradleRepository]: variant.dirName=baiduXiaomi/debug
+[GradleRepository]: variant.baseName=baidu-xiaomi-debug
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@332e49fd
+[GradleRepository]: 	start---------ReadOnlyBuildType
+[GradleRepository]: 	variant.buildType.name=debug
+[GradleRepository]: 	variant.buildType.versionNameSuffix=null
+[GradleRepository]: 	variant.buildType.debuggable=true
+[GradleRepository]: 	variant.buildType.buildConfigFields=[age:com.android.builder.internal.ClassFieldImpl@952db606, developer:com.android.builder.internal.ClassFieldImpl@d5f734c1, gender:com.android.builder.internal.ClassFieldImpl@aa42ea23]
+[GradleRepository]: 		buildConfigFields.key=age
+[GradleRepository]: 		buildConfigFields.value.type=Integer
+[GradleRepository]: 		buildConfigFields.value.name=age
+[GradleRepository]: 		buildConfigFields.value.value=null
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=developer
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=developer
+[GradleRepository]: 		buildConfigFields.value.value="heqidu"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=gender
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=gender
+[GradleRepository]: 		buildConfigFields.value.value="male"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 	end---------ReadOnlyBuildType
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@6bab1d08
+[GradleRepository]: 	start---------ReadOnlySigningConfig
+[GradleRepository]: 	variant.signingConfig.name=debug
+[GradleRepository]: 	variant.signingConfig.storeFile=/mnt/d/AndroidRepositoryNew/GradleRepository/app/keyStore/gradleRepository.jks
+[GradleRepository]: 	variant.signingConfig.keyAlias=gradle
+[GradleRepository]: 	variant.signingConfig.keyPassword=gradle123
+[GradleRepository]: 	variant.signingConfig.storeType=jks
+[GradleRepository]: 	variant.signingConfig.v1SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.v2SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.signingReady=true
+[GradleRepository]: 	end---------ReadOnlySigningConfig
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767, com.android.build.gradle.internal.api.ReadOnlyProductFlavor@1b07357a]
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767
+[GradleRepository]: 	flavor.name =baidu
+[GradleRepository]: 	flavor.dimension =store
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.baidu
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-xiaomi-debug
+[GradleRepository]: 		output.baseName =baidu-xiaomi-debug
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/debug/app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiDebug, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/debug/app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@1b07357a
+[GradleRepository]: 	flavor.name =xiaomi
+[GradleRepository]: 	flavor.dimension =phone
+[GradleRepository]: 	flavor.applicationId =com.ytempest.xiaomi.gradlerepository
+[GradleRepository]: 	flavor.applicationIdSuffix =.miui
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-xiaomi-debug
+[GradleRepository]: 		output.baseName =baidu-xiaomi-debug
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/debug/app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiDebug, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/debug/app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-xiaomi-debug.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: ---------------applicationVariant end---------------
+[GradleRepository]: 
+
+[apk.gradle]: variant.applicationId=com.ytempest.xiaomi.gradlerepository.base.baidu.miui.debugsuffix
+[apk.gradle]: getApplicationId(defaultConfig, productFlavors, flavorName)=com.ytempest.xiaomi.gradlerepository.base.baidu.miui.debugsuffix
+[store_properties.gradle]: run immediately !!!
+[GradleRepository]: 
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=baiduXiaomiCommon
+[GradleRepository]: variant.applicationId=com.ytempest.xiaomi.gradlerepository.base.baidu.miui
+[GradleRepository]: variant.flavorName=baiduXiaomi
+[GradleRepository]: variant.description=CommonBaiduXiaomi build
+[GradleRepository]: variant.dirName=baiduXiaomi/common
+[GradleRepository]: variant.baseName=baidu-xiaomi-common
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@6f9aa923
+[GradleRepository]: 	start---------ReadOnlyBuildType
+[GradleRepository]: 	variant.buildType.name=common
+[GradleRepository]: 	variant.buildType.versionNameSuffix=null
+[GradleRepository]: 	variant.buildType.debuggable=true
+[GradleRepository]: 	variant.buildType.buildConfigFields=[:]
+[GradleRepository]: 	end---------ReadOnlyBuildType
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@6bab1d08
+[GradleRepository]: 	start---------ReadOnlySigningConfig
+[GradleRepository]: 	variant.signingConfig.name=debug
+[GradleRepository]: 	variant.signingConfig.storeFile=/mnt/d/AndroidRepositoryNew/GradleRepository/app/keyStore/gradleRepository.jks
+[GradleRepository]: 	variant.signingConfig.keyAlias=gradle
+[GradleRepository]: 	variant.signingConfig.keyPassword=gradle123
+[GradleRepository]: 	variant.signingConfig.storeType=jks
+[GradleRepository]: 	variant.signingConfig.v1SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.v2SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.signingReady=true
+[GradleRepository]: 	end---------ReadOnlySigningConfig
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767, com.android.build.gradle.internal.api.ReadOnlyProductFlavor@1b07357a]
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767
+[GradleRepository]: 	flavor.name =baidu
+[GradleRepository]: 	flavor.dimension =store
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.baidu
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-xiaomi-common
+[GradleRepository]: 		output.baseName =baidu-xiaomi-common
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/common/app-baidu-xiaomi-common.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-xiaomi-common.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiCommon, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/common/app-baidu-xiaomi-common.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-xiaomi-common.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@1b07357a
+[GradleRepository]: 	flavor.name =xiaomi
+[GradleRepository]: 	flavor.dimension =phone
+[GradleRepository]: 	flavor.applicationId =com.ytempest.xiaomi.gradlerepository
+[GradleRepository]: 	flavor.applicationIdSuffix =.miui
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-xiaomi-common
+[GradleRepository]: 		output.baseName =baidu-xiaomi-common
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/common/app-baidu-xiaomi-common.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-xiaomi-common.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiCommon, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/common/app-baidu-xiaomi-common.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-xiaomi-common.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: ---------------applicationVariant end---------------
+[GradleRepository]: 
+
+[apk.gradle]: variant.applicationId=com.ytempest.xiaomi.gradlerepository.base.baidu.miui
+[apk.gradle]: getApplicationId(defaultConfig, productFlavors, flavorName)=com.ytempest.xiaomi.gradlerepository.base.baidu.miui
+[store_properties.gradle]: run immediately !!!
+[GradleRepository]: 
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=baiduXiaomiRelease
+[GradleRepository]: variant.applicationId=com.ytempest.xiaomi.gradlerepository.base.baidu.miui
+[GradleRepository]: variant.flavorName=baiduXiaomi
+[GradleRepository]: variant.description=ReleaseBaiduXiaomi build
+[GradleRepository]: variant.dirName=baiduXiaomi/release
+[GradleRepository]: variant.baseName=baidu-xiaomi-release
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@725f6663
+[GradleRepository]: 	start---------ReadOnlyBuildType
+[GradleRepository]: 	variant.buildType.name=release
+[GradleRepository]: 	variant.buildType.versionNameSuffix=null
+[GradleRepository]: 	variant.buildType.debuggable=false
+[GradleRepository]: 	variant.buildType.buildConfigFields=[age:com.android.builder.internal.ClassFieldImpl@6290551, developer:com.android.builder.internal.ClassFieldImpl@1115742e, gender:com.android.builder.internal.ClassFieldImpl@aa42ea23]
+[GradleRepository]: 		buildConfigFields.key=age
+[GradleRepository]: 		buildConfigFields.value.type=int
+[GradleRepository]: 		buildConfigFields.value.name=age
+[GradleRepository]: 		buildConfigFields.value.value=23
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=developer
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=developer
+[GradleRepository]: 		buildConfigFields.value.value="ytempest"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=gender
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=gender
+[GradleRepository]: 		buildConfigFields.value.value="male"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 	end---------ReadOnlyBuildType
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@1ccc4ffd
+[GradleRepository]: 	start---------ReadOnlySigningConfig
+[GradleRepository]: 	variant.signingConfig.name=release
+[GradleRepository]: 	variant.signingConfig.storeFile=/mnt/d/AndroidRepositoryNew/GradleRepository/app/keystore/gradleRepository.jks
+[GradleRepository]: 	variant.signingConfig.keyAlias=gradle
+[GradleRepository]: 	variant.signingConfig.keyPassword=gradle123
+[GradleRepository]: 	variant.signingConfig.storeType=jks
+[GradleRepository]: 	variant.signingConfig.v1SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.v2SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.signingReady=true
+[GradleRepository]: 	end---------ReadOnlySigningConfig
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767, com.android.build.gradle.internal.api.ReadOnlyProductFlavor@1b07357a]
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767
+[GradleRepository]: 	flavor.name =baidu
+[GradleRepository]: 	flavor.dimension =store
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.baidu
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-xiaomi-release
+[GradleRepository]: 		output.baseName =baidu-xiaomi-release
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/release/app-baidu-xiaomi-release.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-xiaomi-release.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiRelease, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/release/app-baidu-xiaomi-release.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-xiaomi-release.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@1b07357a
+[GradleRepository]: 	flavor.name =xiaomi
+[GradleRepository]: 	flavor.dimension =phone
+[GradleRepository]: 	flavor.applicationId =com.ytempest.xiaomi.gradlerepository
+[GradleRepository]: 	flavor.applicationIdSuffix =.miui
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-xiaomi-release
+[GradleRepository]: 		output.baseName =baidu-xiaomi-release
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/release/app-baidu-xiaomi-release.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-xiaomi-release.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduXiaomiRelease, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduXiaomi/release/app-baidu-xiaomi-release.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-xiaomi-release.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: ---------------applicationVariant end---------------
+[GradleRepository]: 
+
+[apk.gradle]: variant.applicationId=com.ytempest.xiaomi.gradlerepository.base.baidu.miui
+[apk.gradle]: getApplicationId(defaultConfig, productFlavors, flavorName)=com.ytempest.xiaomi.gradlerepository.base.baidu.miui
+[store_properties.gradle]: run immediately !!!
+[GradleRepository]: 
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=baiduHuaweiDebug
+[GradleRepository]: variant.applicationId=com.ytempest.gradlerepository.base.baidu.emui.debugsuffix
+[GradleRepository]: variant.flavorName=baiduHuawei
+[GradleRepository]: variant.description=DebugBaiduHuawei build
+[GradleRepository]: variant.dirName=baiduHuawei/debug
+[GradleRepository]: variant.baseName=baidu-huawei-debug
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@332e49fd
+[GradleRepository]: 	start---------ReadOnlyBuildType
+[GradleRepository]: 	variant.buildType.name=debug
+[GradleRepository]: 	variant.buildType.versionNameSuffix=null
+[GradleRepository]: 	variant.buildType.debuggable=true
+[GradleRepository]: 	variant.buildType.buildConfigFields=[age:com.android.builder.internal.ClassFieldImpl@952db606, developer:com.android.builder.internal.ClassFieldImpl@d5f734c1, gender:com.android.builder.internal.ClassFieldImpl@aa42ea23]
+[GradleRepository]: 		buildConfigFields.key=age
+[GradleRepository]: 		buildConfigFields.value.type=Integer
+[GradleRepository]: 		buildConfigFields.value.name=age
+[GradleRepository]: 		buildConfigFields.value.value=null
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=developer
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=developer
+[GradleRepository]: 		buildConfigFields.value.value="heqidu"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=gender
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=gender
+[GradleRepository]: 		buildConfigFields.value.value="male"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 	end---------ReadOnlyBuildType
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@6bab1d08
+[GradleRepository]: 	start---------ReadOnlySigningConfig
+[GradleRepository]: 	variant.signingConfig.name=debug
+[GradleRepository]: 	variant.signingConfig.storeFile=/mnt/d/AndroidRepositoryNew/GradleRepository/app/keyStore/gradleRepository.jks
+[GradleRepository]: 	variant.signingConfig.keyAlias=gradle
+[GradleRepository]: 	variant.signingConfig.keyPassword=gradle123
+[GradleRepository]: 	variant.signingConfig.storeType=jks
+[GradleRepository]: 	variant.signingConfig.v1SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.v2SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.signingReady=true
+[GradleRepository]: 	end---------ReadOnlySigningConfig
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767, com.android.build.gradle.internal.api.ReadOnlyProductFlavor@6dd230c3]
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767
+[GradleRepository]: 	flavor.name =baidu
+[GradleRepository]: 	flavor.dimension =store
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.baidu
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-huawei-debug
+[GradleRepository]: 		output.baseName =baidu-huawei-debug
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/debug/app-baidu-huawei-debug.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-huawei-debug.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiDebug, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/debug/app-baidu-huawei-debug.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-huawei-debug.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@6dd230c3
+[GradleRepository]: 	flavor.name =huawei
+[GradleRepository]: 	flavor.dimension =phone
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.emui
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-huawei-debug
+[GradleRepository]: 		output.baseName =baidu-huawei-debug
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/debug/app-baidu-huawei-debug.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-huawei-debug.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiDebug, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiDebug, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/debug/app-baidu-huawei-debug.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-huawei-debug.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: ---------------applicationVariant end---------------
+[GradleRepository]: 
+
+[apk.gradle]: variant.applicationId=com.ytempest.gradlerepository.base.baidu.emui.debugsuffix
+[apk.gradle]: getApplicationId(defaultConfig, productFlavors, flavorName)=com.ytempest.gradlerepository.base.baidu.emui.debugsuffix
+[store_properties.gradle]: run immediately !!!
+[GradleRepository]: 
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=baiduHuaweiCommon
+[GradleRepository]: variant.applicationId=com.ytempest.gradlerepository.base.baidu.emui
+[GradleRepository]: variant.flavorName=baiduHuawei
+[GradleRepository]: variant.description=CommonBaiduHuawei build
+[GradleRepository]: variant.dirName=baiduHuawei/common
+[GradleRepository]: variant.baseName=baidu-huawei-common
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@6f9aa923
+[GradleRepository]: 	start---------ReadOnlyBuildType
+[GradleRepository]: 	variant.buildType.name=common
+[GradleRepository]: 	variant.buildType.versionNameSuffix=null
+[GradleRepository]: 	variant.buildType.debuggable=true
+[GradleRepository]: 	variant.buildType.buildConfigFields=[:]
+[GradleRepository]: 	end---------ReadOnlyBuildType
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@6bab1d08
+[GradleRepository]: 	start---------ReadOnlySigningConfig
+[GradleRepository]: 	variant.signingConfig.name=debug
+[GradleRepository]: 	variant.signingConfig.storeFile=/mnt/d/AndroidRepositoryNew/GradleRepository/app/keyStore/gradleRepository.jks
+[GradleRepository]: 	variant.signingConfig.keyAlias=gradle
+[GradleRepository]: 	variant.signingConfig.keyPassword=gradle123
+[GradleRepository]: 	variant.signingConfig.storeType=jks
+[GradleRepository]: 	variant.signingConfig.v1SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.v2SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.signingReady=true
+[GradleRepository]: 	end---------ReadOnlySigningConfig
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767, com.android.build.gradle.internal.api.ReadOnlyProductFlavor@6dd230c3]
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767
+[GradleRepository]: 	flavor.name =baidu
+[GradleRepository]: 	flavor.dimension =store
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.baidu
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-huawei-common
+[GradleRepository]: 		output.baseName =baidu-huawei-common
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/common/app-baidu-huawei-common.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-huawei-common.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiCommon, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/common/app-baidu-huawei-common.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-huawei-common.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@6dd230c3
+[GradleRepository]: 	flavor.name =huawei
+[GradleRepository]: 	flavor.dimension =phone
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.emui
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-huawei-common
+[GradleRepository]: 		output.baseName =baidu-huawei-common
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/common/app-baidu-huawei-common.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-huawei-common.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiCommon, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiCommon, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/common/app-baidu-huawei-common.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-huawei-common.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: ---------------applicationVariant end---------------
+[GradleRepository]: 
+
+[apk.gradle]: variant.applicationId=com.ytempest.gradlerepository.base.baidu.emui
+[apk.gradle]: getApplicationId(defaultConfig, productFlavors, flavorName)=com.ytempest.gradlerepository.base.baidu.emui
+[store_properties.gradle]: run immediately !!!
+[GradleRepository]: 
+
+[GradleRepository]: ---------------applicationVariant start---------------
+[GradleRepository]: variant.name=baiduHuaweiRelease
+[GradleRepository]: variant.applicationId=com.ytempest.gradlerepository.base.baidu.emui
+[GradleRepository]: variant.flavorName=baiduHuawei
+[GradleRepository]: variant.description=ReleaseBaiduHuawei build
+[GradleRepository]: variant.dirName=baiduHuawei/release
+[GradleRepository]: variant.baseName=baidu-huawei-release
+[GradleRepository]: variant.buildType=com.android.build.gradle.internal.api.ReadOnlyBuildType@725f6663
+[GradleRepository]: 	start---------ReadOnlyBuildType
+[GradleRepository]: 	variant.buildType.name=release
+[GradleRepository]: 	variant.buildType.versionNameSuffix=null
+[GradleRepository]: 	variant.buildType.debuggable=false
+[GradleRepository]: 	variant.buildType.buildConfigFields=[age:com.android.builder.internal.ClassFieldImpl@6290551, developer:com.android.builder.internal.ClassFieldImpl@1115742e, gender:com.android.builder.internal.ClassFieldImpl@aa42ea23]
+[GradleRepository]: 		buildConfigFields.key=age
+[GradleRepository]: 		buildConfigFields.value.type=int
+[GradleRepository]: 		buildConfigFields.value.name=age
+[GradleRepository]: 		buildConfigFields.value.value=23
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=developer
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=developer
+[GradleRepository]: 		buildConfigFields.value.value="ytempest"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 		buildConfigFields.key=gender
+[GradleRepository]: 		buildConfigFields.value.type=String
+[GradleRepository]: 		buildConfigFields.value.name=gender
+[GradleRepository]: 		buildConfigFields.value.value="male"
+[GradleRepository]: 		-------------divider-------------
+[GradleRepository]: 	end---------ReadOnlyBuildType
+[GradleRepository]: variant.signingConfig=com.android.build.gradle.internal.api.ReadOnlySigningConfig@1ccc4ffd
+[GradleRepository]: 	start---------ReadOnlySigningConfig
+[GradleRepository]: 	variant.signingConfig.name=release
+[GradleRepository]: 	variant.signingConfig.storeFile=/mnt/d/AndroidRepositoryNew/GradleRepository/app/keystore/gradleRepository.jks
+[GradleRepository]: 	variant.signingConfig.keyAlias=gradle
+[GradleRepository]: 	variant.signingConfig.keyPassword=gradle123
+[GradleRepository]: 	variant.signingConfig.storeType=jks
+[GradleRepository]: 	variant.signingConfig.v1SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.v2SigningEnabled=true
+[GradleRepository]: 	variant.signingConfig.signingReady=true
+[GradleRepository]: 	end---------ReadOnlySigningConfig
+[GradleRepository]: variant.productFlavors=[com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767, com.android.build.gradle.internal.api.ReadOnlyProductFlavor@6dd230c3]
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@2034d767
+[GradleRepository]: 	flavor.name =baidu
+[GradleRepository]: 	flavor.dimension =store
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.baidu
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-huawei-release
+[GradleRepository]: 		output.baseName =baidu-huawei-release
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/release/app-baidu-huawei-release.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-huawei-release.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiRelease, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/release/app-baidu-huawei-release.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-huawei-release.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: 	start---------ReadOnlyProductFlavor
+[GradleRepository]: 	flavor.toString() =com.android.build.gradle.internal.api.ReadOnlyProductFlavor@6dd230c3
+[GradleRepository]: 	flavor.name =huawei
+[GradleRepository]: 	flavor.dimension =phone
+[GradleRepository]: 	flavor.applicationId =null
+[GradleRepository]: 	flavor.applicationIdSuffix =.emui
+[GradleRepository]: 	flavor.versionCode =null
+[GradleRepository]: 	flavor.versionName =null
+[GradleRepository]: 	flavor.versionNameSuffix =null
+[GradleRepository]: 	flavor.minSdkVersion =null
+[GradleRepository]: 	flavor.targetSdkVersion =null
+[GradleRepository]: 	flavor.maxSdkVersion =null
+[GradleRepository]: 	flavor.resourceConfigurations =[]
+[GradleRepository]: 	flavor.signingConfig =null
+[GradleRepository]: 	flavor.buildConfigFields =[:]
+[GradleRepository]: 	variant.outputs=[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		start---------BaseVariantOutput
+[GradleRepository]: 		output.name =baidu-huawei-release
+[GradleRepository]: 		output.baseName =baidu-huawei-release
+[GradleRepository]: 		output.dirName =
+[GradleRepository]: 		output.outputFile =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/release/app-baidu-huawei-release.apk
+[GradleRepository]: 		output.outputFileName =app-baidu-huawei-release.apk
+[GradleRepository]: 		output.outputs =[ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiRelease, filters=[], versionCode=1, versionName=1.0}}]
+[GradleRepository]: 		out.toString() =ApkVariantOutputImpl_Decorated{apkData=Main{type=MAIN, fullName=baiduHuaweiRelease, filters=[], versionCode=1, versionName=1.0}}
+[GradleRepository]: 		output.outputFile.path =/mnt/d/AndroidRepositoryNew/GradleRepository/app/build/outputs/apk/baiduHuawei/release/app-baidu-huawei-release.apk
+[GradleRepository]: 		output.outputFile.name =app-baidu-huawei-release.apk
+[GradleRepository]: 		end---------BaseVariantOutput
+[GradleRepository]: 	end---------ReadOnlyProductFlavor
+[GradleRepository]: ---------------applicationVariant end---------------
+[GradleRepository]: 
+
+[apk.gradle]: variant.applicationId=com.ytempest.gradlerepository.base.baidu.emui
+[apk.gradle]: getApplicationId(defaultConfig, productFlavors, flavorName)=com.ytempest.gradlerepository.base.baidu.emui
+[store_properties.gradle]: run immediately !!!
+:app:checkBaiduXiaomiDebugClasspath UP-TO-DATE
+:app:preBuild UP-TO-DATE
+:app:preBaiduXiaomiDebugBuild UP-TO-DATE
+:app:compileBaiduXiaomiDebugAidl NO-SOURCE
+:app:compileBaiduXiaomiDebugRenderscript UP-TO-DATE
+:app:checkBaiduXiaomiDebugManifest UP-TO-DATE
+:app:generateBaiduXiaomiDebugBuildConfig UP-TO-DATE
+:app:prepareLintJar UP-TO-DATE
+:app:mainApkListPersistenceBaiduXiaomiDebug
+:app:generateBaiduXiaomiDebugResValues UP-TO-DATE
+:app:generateBaiduXiaomiDebugResources UP-TO-DATE
+:app:mergeBaiduXiaomiDebugResources UP-TO-DATE
+:app:createBaiduXiaomiDebugCompatibleScreenManifests
+:app:processBaiduXiaomiDebugManifest
+:app:splitsDiscoveryTaskBaiduXiaomiDebug UP-TO-DATE
+:app:processBaiduXiaomiDebugResources
+:app:generateBaiduXiaomiDebugSources
+:app:javaPreCompileBaiduXiaomiDebug UP-TO-DATE
+:app:compileBaiduXiaomiDebugJavaWithJavac UP-TO-DATE
+:app:compileBaiduXiaomiDebugNdk NO-SOURCE
+:app:compileBaiduXiaomiDebugSources UP-TO-DATE
+:app:mergeBaiduXiaomiDebugShaders UP-TO-DATE
+:app:compileBaiduXiaomiDebugShaders UP-TO-DATE
+:app:generateBaiduXiaomiDebugAssets UP-TO-DATE
+:app:mergeBaiduXiaomiDebugAssets UP-TO-DATE
+:app:transformClassesWithDexBuilderForBaiduXiaomiDebug UP-TO-DATE
+:app:transformDexArchiveWithExternalLibsDexMergerForBaiduXiaomiDebug UP-TO-DATE
+:app:transformDexArchiveWithDexMergerForBaiduXiaomiDebug UP-TO-DATE
+:app:mergeBaiduXiaomiDebugJniLibFolders UP-TO-DATE
+:app:transformNativeLibsWithMergeJniLibsForBaiduXiaomiDebug UP-TO-DATE
+:app:checkBaiduXiaomiDebugLibraries UP-TO-DATE
+:app:processBaiduXiaomiDebugJavaRes NO-SOURCE
+:app:transformResourcesWithMergeJavaResForBaiduXiaomiDebug UP-TO-DATE
+:app:validateSigningBaiduXiaomiDebug UP-TO-DATE
+:app:packageBaiduXiaomiDebug
+:app:assembleBaiduXiaomiDebug
+[store_properties.gradle]: start run the task：baiduXiaomiDebug
+[store_properties.gradle]: end run the task：baiduXiaomiDebug
+
+BUILD SUCCESSFUL in 1s
+28 actionable tasks: 6 executed, 22 up-to-date

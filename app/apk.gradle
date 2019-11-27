@@ -4,13 +4,20 @@
  * 用于修改生成的apk名称，生成的格式为：包名_渠道名_版本名_版本号_生成时间.apk
  */
 android {//该闭包的对象为AppExtension，该闭包内的所有闭包可以访问到这闭包的所有配置
-    // 这里是apk所以是applicationVariants，如果是library，那么就是libraryVariants
+
+    // 这里是apk所以是applicationVariants，如果是library，那么就是libraryVariants；
+    // applicationVariant变体的数量 = productFlavors的第1维度的数量 *...* 第n维度的数量 * buildTypes的类型数量
+    // 如果执行 assembleDebug，applicationVariant变体的数量也是一样的，不过只会打包 debug 类型的包
     applicationVariants.all { variant ->
         variant.outputs.each { output ->
             if (output.outputFile != null && output.outputFile.name.endsWith(".apk")) {
                 def buildTypeName = variant.buildType.name
                 def flavorName = variant.flavorName
-                def appId = getApplicationId(defaultConfig, productFlavors, flavorName)
+                def appId = variant.applicationId
+                // 通过以下方式可以自己实现获取applicationId的逻辑
+//                def appId = getApplicationId(defaultConfig, productFlavors, flavorName)
+                log("variant.applicationId=" + variant.applicationId)
+                log("getApplicationId(defaultConfig, productFlavors, flavorName)=" + variant.applicationId)
                 def buildTypeSuffix = getBuildTypeSuffix(buildTypes, buildTypeName)
                 def finalAppId = appId + buildTypeSuffix
                 def versionName = defaultConfig.getVersionName()

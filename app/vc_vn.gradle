@@ -39,7 +39,11 @@ def getVersionNameFromGit() {
  */
 def getVersionCodeFromGit() {
     def stdout = new ByteArrayOutputStream()
+    // exec的闭包运行在项目的根目录下
     exec {
+        // commandLine运行当前gradle脚本被引用的目录下
+        // 若是app/build.gradle引用则在项目的app目录
+        // 若是根目录/build.gradle引用则在项目的根目录
         commandLine 'git', 'tag', '--list'
         standardOutput = stdout
     }

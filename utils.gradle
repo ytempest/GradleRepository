@@ -1,0 +1,11 @@
+static def isWindow() {
+    return org.gradle.internal.os.OperatingSystem.current().isWindows()
+}
+
+static def isLinux() {
+    return org.gradle.internal.os.OperatingSystem.current().isLinux()
+}
+
+static def isMacOsX() {
+    return org.gradle.internal.os.OperatingSystem.current().isMacOsX()
+}

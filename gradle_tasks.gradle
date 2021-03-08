@@ -1,0 +1,12 @@
+gradle.taskGraph.whenReady { TaskExecutionGraph taskGraph ->
+    println('gradle_tasks.gradle: task graph is ready : ' + taskGraph)
+    taskGraph.getAllTasks().each { Task task ->
+        println('gradle_tasks.gradle: task=' + task.name)
+        task.doFirst {
+            println('gradle_tasks.gradle: ' + task.name + " doFirst")
+        }
+        task.doLast {
+            println('gradle_tasks.gradle: ' + task.name + " doLast")
+        }
+    }
+}
